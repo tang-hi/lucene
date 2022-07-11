@@ -356,6 +356,7 @@ public class LevenshteinAutomata {
           0x7fffffffffffffffL
         };
 
+    // lookup the table by index
     protected int unpack(long[] data, int index, int bitsPerValue) {
       final long bitLoc = bitsPerValue * index;
       final int dataLoc = (int) (bitLoc >> 6);
